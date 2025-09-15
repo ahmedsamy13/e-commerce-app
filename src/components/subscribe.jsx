@@ -16,7 +16,7 @@ export default function Sub() {
         >
           <input
             type="email"
-            className=" w-96 p-3 border border-gray-300 focus:outline-gray-500 outline-0"
+            className=" w-70 p-3 border border-gray-300 focus:outline-gray-500 outline-0"
             placeholder="Enter Your Email"
             required
           />
