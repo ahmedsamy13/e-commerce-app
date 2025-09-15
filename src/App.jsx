@@ -6,11 +6,11 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Product from "./pages/Product";
 import Login from "./pages/Login";
-import Cart from "./pages/CarT";
 import PlaceOrder from "./pages/PlaceOrder";
 import Orders from "./pages/Orders";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Cart from "./pages/Cart";
 
 function App() {
   return (

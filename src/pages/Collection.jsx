@@ -2,7 +2,6 @@ import { useContext, useState } from "react";
 import { Shopcontext } from "./../context/shopcontext";
 import { assets } from "../assets/assets";
 import ProductItem from "../components/ProductItem";
-import Product from "./Product";
 
 export default function Collection() {
   const { products } = useContext(Shopcontext);
@@ -26,17 +25,6 @@ export default function Collection() {
     );
   }
   const FilteredProducts = filterproduct(products);
-
-  // const [category, setCategory] = useState([]);
-  // const [subCategory, setSubCategory] = useState([]);
-  // const toggleCatpgery = (e) => {
-  //   if (category.include(e.target.value)) {
-  //     setCategory((prev) => prev.filter((item) => item !== e.target.value));
-  //   }
-  //   else{
-  //     setCategory(prev=>[...])
-  //   }
-  // };
   return (
     <div className="lg:w-[80%] mb-18 flex flex-col sm:flex-row sm:gap-10 pt-10 border-t m-auto">
       {/* {filter } */}
@@ -45,7 +33,7 @@ export default function Collection() {
           filters
           <img
             src={assets.dropdown_icon}
-            onClick={(e) => setShowFilter((e) => !e)}
+            onClick={() => setShowFilter((e) => !e)}
             className="h-4"
             alt=""
           />
