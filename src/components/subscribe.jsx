@@ -16,11 +16,11 @@ export default function Sub() {
         >
           <input
             type="email"
-            className=" w-70 p-3 border border-gray-300 focus:outline-gray-500 outline-0"
+            className=" w-55 p-2 border border-gray-300 focus:outline-gray-500 outline-0"
             placeholder="Enter Your Email"
             required
           />
-          <button type="submit" className="bg-black w-36 p-3 text-white">
+          <button type="submit" className="bg-black w-22 p-2 text-white">
             Subscribe
           </button>
         </form>
