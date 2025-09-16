@@ -13,6 +13,7 @@ import Footer from "./components/Footer";
 import Cart from "./pages/Cart";
 import ScrollToTop from "./components/scrolltop";
 import { ToastContainer, toast } from "react-toastify";
+import Signup from "./pages/sign";
 
 function App() {
   return (
@@ -28,8 +29,7 @@ function App() {
         <Route path="/product/:productId" element={<Product />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/placeorder" element={<PlaceOrder />} />
-        <Route path="orders" element={<Orders />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
       <Footer />
     </div>
