@@ -11,11 +11,15 @@ import Orders from "./pages/Orders";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Cart from "./pages/Cart";
+import ScrollToTop from "./components/scrolltop";
+import { ToastContainer, toast } from "react-toastify";
 
 function App() {
   return (
     <div className="px-4 sm:px-[5vm] md:px-[7vm] lg:px-[9vm] ">
       <Navbar />
+      <ToastContainer />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/collection" element={<Collection />}></Route>

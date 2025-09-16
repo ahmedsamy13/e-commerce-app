@@ -13,7 +13,7 @@ export default function LatestCollection() {
     <div className="lg:w-[80%] m-auto">
       <div className="my-10  ">
         <div className="text-center py-2 text-3xl">
-          <Title />
+          <Title first="LATEST" second="COLLECTIONS" />
           <p className="text-gray-600 m-auto text-xs w-3/4 sm:text-sm md:text-base">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the.

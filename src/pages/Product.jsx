@@ -1,10 +1,11 @@
 import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Shopcontext } from "../context/shopcontext";
+import RelatedProducts from "../components/relatedProducts";
 
 export default function Product() {
   const { productId } = useParams();
-  const { products, currency } = useContext(Shopcontext);
+  const { products, currency, addToCart } = useContext(Shopcontext);
   const [productData, setProductDate] = useState(null);
   const [image, setImage] = useState("");
   const [size, setSize] = useState("");
@@ -91,12 +92,18 @@ export default function Product() {
             </div>
           </div>
 
-          {/* زرار الكارت */}
-          <button className="mt-4 bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition">
+          <button
+            onClick={() => addToCart(productData._id, size)}
+            className="mt-4 bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition"
+          >
             Add to Cart
           </button>
         </div>
       </div>
+      <RelatedProducts
+        category={productData.category}
+        subCategory={productData.subCategory}
+      />
     </div>
   );
 }
